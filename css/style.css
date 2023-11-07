@@ -1,0 +1,587 @@
+.header {
+    position: relative;
+    background: #fff;
+    z-index: 999;
+}
+
+.main {
+    background: #F5EBDC;
+}
+
+.inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 104px 0 16px 0;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    padding: 0 0 32px 0;
+}
+
+.header .inner {
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+}
+
+.gnb>ul {
+    display: flex;
+    gap: 120px;
+}
+
+.gnb>ul>li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.gnb>ul>li .sub {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    transform: translate(-50%, 0);
+
+    white-space: nowrap;
+    display: none;
+
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+
+    border-radius: 12px;
+    background: #fff;
+    padding: 8px 16px;
+}
+
+.gnb>ul>li:hover .sub {
+    display: block;
+    z-index: 999;
+}
+
+/* .header::after {
+    content: "";
+
+    position: absolute;
+    background: #fff;
+
+    width: 100%;
+    height: 230px;
+} */
+
+
+
+
+.mainVisual {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px 0 #999;
+    z-index: 6;
+}
+
+.mainVisual .mainSlide {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mainSlide .itm01 {
+    background: url(../images/slideitm01.png) no-repeat center center;
+}
+
+.mainSlide .itm02 {
+    background: url(../images/slideitm02.png) no-repeat center center;
+}
+
+.mainSlide .itm03 {
+    background: url(../images/slideitm03.png) no-repeat center center;
+}
+
+.mainSlide .itm04 {
+    background: url(../images/slideitm04\(2\).png) no-repeat center center;
+}
+
+.mainSlide .itm05 {
+    background: url(../images/slideitm05.png) no-repeat center center;
+}
+
+.mainSlide .itm06 {
+    background: url(../images/slideitm06.png) no-repeat center center;
+}
+
+.mainSlide .itm {
+    height: 480px;
+}
+
+.mainVisual .mainSlide .slick-dots {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.mainVisual .mainSlide .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 8px;
+    background: #fff;
+    margin: 0 10px 0 0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.mainVisual .mainSlide .slick-dots li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: #FF8233;
+}
+
+.mainVisual .mainSlide .slick-dots li.slick-active::after {
+    width: 100%;
+    transition: 3s;
+}
+
+.mainVisual .mainSlide .slick-dots li button {
+    display: none;
+}
+
+.mainVisual .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 1440px;
+    width: 100%;
+}
+
+.mainVisual .arrows i {
+    position: absolute;
+    transform: translate(0, -50%);
+
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px #444;
+}
+
+.mainVisual .arrows .left {
+    left: 0;
+}
+
+.mainVisual .arrows .right {
+    right: 0;
+}
+
+.subVisual {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 0 0 104px 0;
+    box-shadow: 0 4px 10px 0 #999;
+    z-index: 5;
+}
+
+.subVisual figure {
+    text-align: center;
+}
+
+.subVisual strong {
+    display: block;
+    margin: 32px 0 0 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.NewMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.NewMenu>figure:hover img {
+    transform: scale(1.2);
+}
+
+
+
+.subVisual02 {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 0 0 104px 0;
+    box-shadow: 0 4px 10px 0 #999;
+}
+
+.subVisual02 .tabMenu {
+    display: flex;
+    gap: 30px;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 104px 0 16px 0;
+}
+
+.subVisual02 .tabMenu li {
+    flex: 1;
+    text-align: center;
+    border: 3px solid #FF8233;
+    padding: 16px 0;
+    margin: 0 120px;
+    cursor: pointer;
+}
+
+.subVisual02 .tabMenu li.on {
+    background: #FF8233;
+    color: #fff;
+}
+
+.subVisual02 .tabContent .content {
+    display: none;
+    padding: 32px 0;
+}
+
+.tabContent .content.on {
+    display: flex;
+}
+
+.tabContent .content.on figure {
+    flex: 1;
+    text-align: center;
+}
+
+.subVisual03 h2 {
+    color: #fff;
+}
+
+.subVisual03 p {
+    color: #fff;
+}
+
+
+.subVisual03 {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background: #FF8233;
+    padding: 0 0 104px 0;
+    box-shadow: 0 4px 10px 0 #999;
+}
+
+.subVisual03 .MainMenu {
+    position: relative;
+}
+
+.subVisual03 figure {
+    background: #fff;
+    border-radius: 10%;
+    border: 10px solid #FF8233;
+}
+
+.subVisual03 .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1440px;
+    width: 100%;
+}
+
+.subVisual03 .arrows i {
+    position: absolute;
+    top: 0;
+    transform: translate(0, -100%);
+    color: #FF8233;
+    font-size: 24px;
+    font-weight: 700;
+
+    padding: 0 15px;
+}
+
+.subVisual03 .arrows .left {
+    left: 0;
+}
+
+.subVisual03 .arrows .right {
+    right: 0;
+}
+
+.subVisual03 .content .slick-dots {
+    text-align: center;
+    margin: 8px 0;
+}
+
+.subVisual03 .content .slick-dots li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.subVisual03 .content .slick-dots li button {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    background: #fff;
+    color: #FF8233;
+
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.subVisual03 .content .slick-dots li.slick-active button {
+    background: #FF8233;
+    color: #fff;
+    border: 2px solid #fff;
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+/*  */
+
+.mainStore {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background: #FFf;
+    padding: 0 0 104px 0;
+    box-shadow: 0 4px 10px 0 #999;
+}
+
+/* .mainStore h2 {
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0 0 16px 0;
+    text-align: center;
+}
+
+.mainStore p {
+    font-size: 32px;
+    margin: 0 0 32px 0;
+    text-align: center;
+} */
+
+.mainStore .inner {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.mainStore .inner>* {
+    position: relative;
+    text-align: center;
+}
+
+.mainStore .desc {
+    color: #f00;
+    font-weight: 1000;
+}
+
+.mainStore .itm strong {
+    display: block;
+
+}
+
+.mainStore .itm i {
+    font-size: 64px;
+    margin: 0 0 12px 0;
+}
+
+.mainStore .itm {
+    position: relative;
+}
+
+.mainStore .itm~.itm::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -58px;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 120px;
+    background: #999;
+}
+
+/*  */
+
+.lastVisual {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background: url(../images/background.png);
+    box-shadow: 0 4px 10px 0 #999;
+}
+
+.lastVisual .inner {
+    display: flex;
+    align-items: center;
+}
+
+.lastVisual .inner>* {
+    flex: 1;
+}
+
+.lastVisual .inner h2 {
+    color: #fff;
+    padding: 40px 0;
+}
+
+.lastVisual .inner h2 i {
+    margin: 0 8px;
+}
+
+.lastVisual p {
+    line-height: 32px;
+    color: #fff;
+    padding: 40px 0;
+}
+
+/* footer css */
+
+.footer {
+    background: #2b0200;
+}
+
+.footer .inner {
+    padding: 40px 15px 40px 15px;
+}
+
+.sitemap {
+    margin: 0 0 40px 0;
+}
+
+.sitemap .menu {
+    display: flex;
+}
+
+.sitemap .menu>li {
+    flex: 1;
+    line-height: 28px;
+}
+
+.sitemap .menu>li>a {
+    color: #f5ebdc;
+    font-size: 24px;
+}
+
+.sitemap .menu .subMenu a {
+    color: #bba391;
+}
+
+
+.webContainer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #bba391;
+    color: #bba391;
+    padding: 40px 0 0 0;
+}
+
+.webContainer .copyright p {
+    text-align: left;
+    line-height: 20px;
+    margin: 16px 0 0 0;
+}
+
+.webContainer .footerMenu {
+    width: 300px;
+}
+
+.webContainer .footerMenu .menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.webContainer .footerMenu .menu>a {
+    position: relative;
+    display: inline-block
+}
+
+.webContainer .footerMenu .menu>a~a::before {
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translate(0, -50%);
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #bba391;
+}
+
+.footerMenu .footerBtn {
+    display: flex;
+    text-align: center;
+    margin: 16px 0 0 0;
+}
+
+.footerMenu .footerBtn a {
+    display: inline-block;
+    flex: 1;
+    left: 0;
+    right: 0;
+
+    color: #f5ebdc;
+    border: 1px solid #bba391;
+    border-radius: 16px;
+    padding: 4px 10px;
+}
+
+.familyMap .sns i {
+    font-size: 24px;
+    color: #f5ebdc;
+}
+
+
+.totop button {
+    position: fixed;
+
+    opacity: 0;
+    transition: 0.5s;
+
+    bottom: 100px;
+    right: 100px;
+    border: none;
+    border-radius: 10px;
+    background: #FF8233;
+
+    overflow: hidden;
+}
+
+.totop button.on {
+    opacity: 1;
+}
+
+.totop i {
+    padding: 8px;
+    font-size: 24px;
+    color: #fff;
+}
